@@ -1,9 +1,9 @@
 mergeInto(LibraryManager.library, {
-  InitFirebase: function () {
-    if (window.InitFirebase) {
-      window.InitFirebase();
+  TestFromUnity: function () {
+    if (window.firebaseLoaded) {
+      console.log("🔥 Firebase is ready!");
     } else {
-      console.error("InitFirebase not found");
+      console.error("❌ Firebase not loaded");
     }
   }
 });

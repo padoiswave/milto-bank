@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <!-- Firebase CDN (module 아님!) -->
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-analytics-compat.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBvbeP_CsKCad2mXFRONacVUzQjtKoWelw",
+      authDomain: "milto-bank.firebaseapp.com",
+      projectId: "milto-bank",
+      storageBucket: "milto-bank.firebasestorage.app",
+      messagingSenderId: "393791122217",
+      appId: "1:393791122217:web:fc6d7b3b4a95d577962538",
+      measurementId: "G-T60EX0HEZL"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    window.firebaseLoaded = true;
+    console.log("🔥 Firebase loaded");
+  </script>
+</head>
+
+<body>
+  <!-- Unity injects canvas here -->
+</body>
+</html>
